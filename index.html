@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Fitness</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon .ico" type="image/x-icon">
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url('img/abspic.jpg') ;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .left{
+          /* border: 2px solid red; */
+          display: inline-block;
+          position: absolute;
+             top: 17px;
+             left: 30px;
+    }
+   
+    .right{
+           /*   border: 2px solid yellow; */
+             display: inline-block;
+             position: absolute;
+             top: 35px;
+             right: 30px;
+
+    }
+    .mid{
+        /* 
+              border: 2px solid green; */
+              display: block;
+              width: 38%;
+              margin: 45px auto;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+         text-decoration: none ;
+         font-size: 20px;
+         padding: 5px 15px;
+         color: white;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .left img{
+        width: 70px;
+        margin-left: 35px;
+    }
+    .left div{
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+        
+    }
+    .btn{
+        font-family: 'Baloo Bhai 2', cursive;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        margin: 5px;
+        cursor: pointer;
+        padding: 2px 10px;
+    }
+    .btn:hover{
+        background-color: yellow;
+        color: black;
+    }
+    .container{
+        border: 2px solid white;
+        width: 40%;
+        display: block;
+        margin: 106px 50px;
+        padding: 60px;
+        border-radius: 25px;
+  
+
+    }
+
+    .formgroup input{
+        display: block;
+        margin: 8px auto;
+        padding: 5px;
+        border-radius: ;
+        width: 55%; 
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .container h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .container button{
+        font-family: 'Baloo Bhai 2', cursive;
+        width: 55%;
+        margin:  20px auto;
+        display: block;
+        padding: 5px;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <header class="header">
+        
+       <!-- left div for the logo  -->
+        <div class="left" >
+           <img src="img/gymlogo.png" alt="">
+           <div>Rohit Fitness</div>
+        </div><a href="#"></a>
+        <!-- mid div for the nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- riht div for the buttons -->
+        <div class="right">
+         <button class="btn">Call me Now</button>
+         <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym in Kolkata Today </h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Enter Your Locality">
+            </div>
+            <div class="formgroup">
+                <input type="text" placeholder="Enter Your Mobile Number">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+</html>
